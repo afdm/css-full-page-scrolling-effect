@@ -25,6 +25,7 @@ body {
 img {
   display: block;
   max-width: 100%;
+  margin: 20px;
 }
 
 h2,
@@ -114,4 +115,14 @@ section h2 {
   color: var(--secondary);
   font-size: 18px;
   margin-top: 24px;
+}
+
+@media screen and (max-width: 1024px) {
+  img {
+    display: none;
+  }
+
+  .container .content {
+    width: 100%;
+  }
 }
