@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+/* Basic things */
+
+:root {
+  --primary: #2b2d42;
+  --secondary: #edf2f4;
+  --accent: #d80032;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  color: var(--secondary);
+  font-size: 18px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+h2,
+p,
+input {
+  margin-bottom: 24px;
+}
+
+a {
+  color: var(--secondary);
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* This is all about that */
+main {
+  height: 100vh;
+  /* Do not forget to set the overflow */
+  overflow: auto;
+  /* This all about scroll-snap-type */
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  height: 100%;
+  /* The start alignment of this box's scroll snap area, within the scroll container's snapport is a snap position in this axis. */
+  scroll-snap-align: start;
+}
+
+/* decoration  */
+section .container {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin: 0 auto;
+}
+
+.container .content {
+  width: 40%;
+}
+
+section h2 {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 64px;
+}
+
+.btn {
+  border: solid 2px var(--accent);
+  padding: 5px 8px;
+}
+
+.home {
+  background: var(--primary);
+}
+
+.our-team {
+  background: var(--secondary);
+  color: var(--primary);
+}
+.contact {
+  background: var(--primary);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  font-size: 14px;
+}
+
+.contact-form input {
+  height: 40px;
+  font-size: 24px;
+  padding: 10px;
+  border: none;
+  background: var(--secondary);
+}
+
+.contact-form button {
+  background: none;
+  color: var(--secondary);
+  font-size: 18px;
+  margin-top: 24px;
+}
